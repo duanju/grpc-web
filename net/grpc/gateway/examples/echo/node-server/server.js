@@ -53,7 +53,7 @@ function copyMetadata(call) {
  */
 function doEcho(call, callback) {
   callback(null, {
-    message: call.request.message
+    message: 'You said: ' + call.request.message
   }, copyMetadata(call));
 }
 
